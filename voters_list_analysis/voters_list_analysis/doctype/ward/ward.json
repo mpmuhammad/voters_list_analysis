@@ -1,0 +1,105 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:ward_name",
+ "creation": "2025-08-03 10:23:48.235585",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "word_details_section",
+  "ward_name",
+  "ward_no",
+  "column_break_kkfc",
+  "panchayth",
+  "ward_area_section",
+  "west",
+  "east",
+  "column_break_zasu",
+  "south",
+  "north"
+ ],
+ "fields": [
+  {
+   "fieldname": "word_details_section",
+   "fieldtype": "Section Break",
+   "label": "Word Details"
+  },
+  {
+   "fieldname": "ward_name",
+   "fieldtype": "Data",
+   "label": "Ward Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "ward_no",
+   "fieldtype": "Data",
+   "label": "Ward No"
+  },
+  {
+   "fieldname": "panchayth",
+   "fieldtype": "Link",
+   "label": "Panchayth",
+   "options": "Panchayath"
+  },
+  {
+   "fieldname": "ward_area_section",
+   "fieldtype": "Section Break",
+   "label": "Ward Area"
+  },
+  {
+   "fieldname": "west",
+   "fieldtype": "Data",
+   "label": "West"
+  },
+  {
+   "fieldname": "east",
+   "fieldtype": "Data",
+   "label": "East"
+  },
+  {
+   "fieldname": "column_break_zasu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "south",
+   "fieldtype": "Data",
+   "label": "South"
+  },
+  {
+   "fieldname": "north",
+   "fieldtype": "Data",
+   "label": "North"
+  },
+  {
+   "fieldname": "column_break_kkfc",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-03 10:31:30.566517",
+ "modified_by": "Administrator",
+ "module": "Voters List Analysis",
+ "name": "Ward",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

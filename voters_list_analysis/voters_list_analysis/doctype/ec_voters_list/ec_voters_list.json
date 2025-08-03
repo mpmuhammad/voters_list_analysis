@@ -1,0 +1,153 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "ECV-.####",
+ "creation": "2025-08-03 10:11:03.620821",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "ward_details_section",
+  "panchayth",
+  "ward",
+  "column_break_tdgf",
+  "part_name",
+  "part_no",
+  "old_ward_no",
+  "personal_details_section",
+  "serial_no",
+  "voter_name",
+  "voter_guardian_name",
+  "age",
+  "column_break_dfai",
+  "house_no",
+  "house_name",
+  "gender"
+ ],
+ "fields": [
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Int",
+   "label": "Serial No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ward",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Ward",
+   "options": "Ward",
+   "reqd": 1
+  },
+  {
+   "fieldname": "part_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Part Name",
+   "options": "Ward Part",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "part_name.part_no",
+   "fieldname": "part_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Part No",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "ward_details_section",
+   "fieldtype": "Section Break",
+   "label": "Ward Details "
+  },
+  {
+   "fieldname": "old_ward_no",
+   "fieldtype": "Data",
+   "label": "Old Ward No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_tdgf",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "personal_details_section",
+   "fieldtype": "Section Break",
+   "label": "Personal Details "
+  },
+  {
+   "fieldname": "voter_name",
+   "fieldtype": "Data",
+   "label": "Voter Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "voter_guardian_name",
+   "fieldtype": "Data",
+   "label": "Voter Guardian Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "label": "Age"
+  },
+  {
+   "fieldname": "column_break_dfai",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "house_no",
+   "fieldtype": "Int",
+   "label": "House No",
+   "reqd": 1
+  },
+  {
+   "fieldname": "house_name",
+   "fieldtype": "Data",
+   "label": "House Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "panchayth",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Panchayth",
+   "options": "Panchayath",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-03 11:01:40.592984",
+ "modified_by": "Administrator",
+ "module": "Voters List Analysis",
+ "name": "EC Voters List",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,203 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-08-03 11:02:53.480894",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_yceq",
+  "column_break_tvgz",
+  "panchayth",
+  "ward",
+  "ward_name",
+  "part_name",
+  "part_no",
+  "column_break_svvc",
+  "amended_from",
+  "serial_no",
+  "voters_name",
+  "voters_guardian_name",
+  "mobile_no",
+  "column_break_tcak",
+  "voters_house_no",
+  "voters_house_name",
+  "gender",
+  "age",
+  "political_information_section",
+  "political_party",
+  "voting_history",
+  "whether_the_voters_can_influance_others_in_the_locality",
+  "column_break_pmjl",
+  "political_alliance",
+  "support_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_yceq",
+   "fieldtype": "Section Break",
+   "label": "Voters Infoirmation"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Voters Information",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "panchayth",
+   "fieldtype": "Link",
+   "label": "Panchayth",
+   "options": "Panchayath"
+  },
+  {
+   "fieldname": "ward",
+   "fieldtype": "Link",
+   "label": "Ward",
+   "options": "Ward"
+  },
+  {
+   "fieldname": "part_name",
+   "fieldtype": "Link",
+   "label": "Part Name",
+   "options": "Ward Part"
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Data",
+   "label": "Serial No"
+  },
+  {
+   "fieldname": "column_break_tvgz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "part_name.part_no",
+   "fieldname": "part_no",
+   "fieldtype": "Data",
+   "label": "Part No",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "ward.ward_name",
+   "fieldname": "ward_name",
+   "fieldtype": "Data",
+   "label": "Ward Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "voters_name",
+   "fieldtype": "Data",
+   "label": "Voters Name"
+  },
+  {
+   "fieldname": "voters_house_no",
+   "fieldtype": "Int",
+   "label": "Voters House No"
+  },
+  {
+   "fieldname": "voters_house_name",
+   "fieldtype": "Data",
+   "label": "Voters House Name"
+  },
+  {
+   "fieldname": "voters_guardian_name",
+   "fieldtype": "Data",
+   "label": "Voters Guardian Name"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Gender"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "label": "Age"
+  },
+  {
+   "fieldname": "column_break_svvc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_tcak",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "political_information_section",
+   "fieldtype": "Section Break",
+   "label": "Political Information"
+  },
+  {
+   "fieldname": "political_party",
+   "fieldtype": "Link",
+   "label": "Political Party",
+   "options": "Political Party"
+  },
+  {
+   "fieldname": "political_alliance",
+   "fieldtype": "Link",
+   "label": "Political Alliance",
+   "options": "Political Alliance"
+  },
+  {
+   "fieldname": "column_break_pmjl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "voting_history",
+   "fieldtype": "Select",
+   "label": "Voting History",
+   "options": "PRO UDF\nPRO LDF\nUDF\nLDF\nBJP\nUnknow\nOther"
+  },
+  {
+   "fieldname": "support_status",
+   "fieldtype": "Select",
+   "label": "Support Status",
+   "options": "Supporter\nNeutral\nOpposed\nUndecided"
+  },
+  {
+   "default": "0",
+   "fieldname": "whether_the_voters_can_influance_others_in_the_locality",
+   "fieldtype": "Check",
+   "label": "Whether the voters can influance others in the locality  "
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-08-03 11:50:13.286695",
+ "modified_by": "Administrator",
+ "module": "Voters List Analysis",
+ "name": "Voters Information",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
